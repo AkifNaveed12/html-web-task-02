@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Portal</title>
+</head>
+<body>
+    <h1>Job Application Portal</h1>
+    <p>Apply for your next career opportunity.</p>
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Applicant Information</legend>
+
+            <label for="name">Applicant Name:</label><br>
+            <input type="text" id="name" name="applicant_name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <strong>Gender:</strong><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Professional Information</legend>
+
+            <label for="qualification">Qualification:</label><br>
+            <select id="qualification" name="qualification" required>
+                <option value="">-- Select Qualification --</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select><br><br>
+
+            <label for="position">Job Position:</label><br>
+            <select id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="software-developer">Software Developer</option>
+                <option value="web-developer">Web Developer</option>
+                <option value="data-analyst">Data Analyst</option>
+                <option value="ai-engineer">AI Engineer</option>
+            </select><br><br>
+
+            <label for="city">City:</label><br>
+            <input list="cities" id="city" name="city" required>
+            <datalist id="cities">
+                <option value="Islamabad">
+                <option value="Rawalpindi">
+                <option value="Lahore">
+                <option value="Karachi">
+                <option value="Peshawar">
+                <option value="Quetta">
+            </datalist><br><br>
+
+            <label for="salary">Expected Salary:</label><br>
+            <input type="number" id="salary" name="salary" min="0" required><br><br>
+
+            <label for="date">Available Date:</label><br>
+            <input type="date" id="date" name="available_date" required><br><br>
+
+            <label for="cv">Upload CV:</label><br>
+            <input type="file" id="cv" name="cv" required><br><br>
+
+            <label for="cover">Cover Letter:</label><br>
+            <textarea id="cover" name="cover_letter" rows="8" cols="60" required></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+    <p>&copy; 2026 Job Application Portal</p>
+</body>
+</html>

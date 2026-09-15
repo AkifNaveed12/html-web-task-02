@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival Registration</title>
+</head>
+<body>
+    <h1>Music Festival Registration</h1>
+    <p>Register now for an unforgettable music festival.</p>
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Participant Information</legend>
+
+            <label for="name">Participant Name:</label><br>
+            <input type="text" id="name" name="participant_name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <strong>Gender:</strong><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Event Details</legend>
+
+            <label for="ticket">Ticket Type:</label><br>
+            <select id="ticket" name="ticket_type" required>
+                <option value="">-- Select Ticket Type --</option>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+
+            <label for="tickets">Number of Tickets:</label><br>
+            <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+
+            <label for="date">Preferred Event Date:</label><br>
+            <input type="date" id="date" name="event_date" required><br><br>
+
+            <label for="time">Preferred Time:</label><br>
+            <input type="time" id="time" name="event_time" required><br><br>
+
+            <strong>Food Preference:</strong><br>
+            <input type="radio" id="veg" name="food" value="Vegetarian">
+            <label for="veg">Vegetarian</label>
+            <input type="radio" id="nonveg" name="food" value="Non-Vegetarian">
+            <label for="nonveg">Non-Vegetarian</label>
+            <input type="radio" id="vegan" name="food" value="Vegan">
+            <label for="vegan">Vegan</label><br><br>
+
+            <strong>Additional Facilities:</strong><br>
+            <input type="checkbox" id="parking" name="facilities" value="Parking">
+            <label for="parking">Parking</label><br>
+            <input type="checkbox" id="camping" name="facilities" value="Camping">
+            <label for="camping">Camping Area</label><br>
+            <input type="checkbox" id="shuttle" name="facilities" value="Shuttle">
+            <label for="shuttle">Shuttle Service</label><br>
+            <input type="checkbox" id="merch" name="facilities" value="Merchandise">
+            <label for="merch">Festival Merchandise</label><br><br>
+
+            <label for="id-document">Upload Identification Document:</label><br>
+            <input type="file" id="id-document" name="identification" required><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="7" cols="60"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+    <p>&copy; 2026 Music Festival Registration</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Property Listing</title>
+</head>
+<body>
+    <h1>Real Estate Property Listing</h1>
+    <p>List your property for buyers and tenants.</p>
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Owner Information</legend>
+
+            <label for="owner">Owner Name:</label><br>
+            <input type="text" id="owner" name="owner_name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Property Information</legend>
+
+            <label for="type">Property Type:</label><br>
+            <select id="type" name="property_type" required>
+                <option value="">-- Select Property Type --</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="plot">Plot</option>
+                <option value="office">Office</option>
+                <option value="shop">Shop</option>
+            </select><br><br>
+
+            <label for="city">City:</label><br>
+            <input list="cities" id="city" name="city" required>
+            <datalist id="cities">
+                <option value="Islamabad">
+                <option value="Rawalpindi">
+                <option value="Lahore">
+                <option value="Karachi">
+                <option value="Peshawar">
+                <option value="Multan">
+            </datalist><br><br>
+
+            <label for="bedrooms">Number of Bedrooms:</label><br>
+            <input type="number" id="bedrooms" name="bedrooms" min="0" required><br><br>
+
+            <label for="price">Price:</label><br>
+            <input type="number" id="price" name="price" min="0" required><br><br>
+
+            <label for="date">Property Availability Date:</label><br>
+            <input type="date" id="date" name="availability_date" required><br><br>
+
+            <label for="url">Property Website URL:</label><br>
+            <input type="url" id="url" name="property_url" placeholder="https://example.com"><br><br>
+
+            <label for="description">Property Description:</label><br>
+            <textarea id="description" name="description" rows="8" cols="60" required></textarea><br><br>
+
+            <label for="images">Upload Property Images:</label><br>
+            <input type="file" id="images" name="property_images" accept="image/*" multiple required><br><br>
+
+            <strong>Property Features:</strong><br>
+            <input type="checkbox" id="parking" name="features" value="Parking">
+            <label for="parking">Parking</label><br>
+            <input type="checkbox" id="garden" name="features" value="Garden">
+            <label for="garden">Garden</label><br>
+            <input type="checkbox" id="security" name="features" value="Security">
+            <label for="security">Security</label><br>
+            <input type="checkbox" id="electricity" name="features" value="Backup Electricity">
+            <label for="electricity">Backup Electricity</label><br>
+            <input type="checkbox" id="water" name="features" value="Water Supply">
+            <label for="water">Water Supply</label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="List Property">
+    </form>
+
+    <hr>
+    <p>&copy; 2026 Real Estate Property Listing</p>
+</body>
+</html>
